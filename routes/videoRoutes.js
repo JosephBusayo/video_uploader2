@@ -7,7 +7,7 @@ import { start_recording,
 } from "../controller/videoController.js";
 
 
-router.post('/start-recording', start_recording) 
+router.get('/start-recording', start_recording) 
 router.post('/upload-chunk/:sessionId', upload_chunk) 
 router.get('/stop_recording/:sessionId', stop_recording) 
 router.get('/watch', watch) 
